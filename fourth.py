@@ -23,6 +23,12 @@ print(first)
 second = first.split(' ')
 print(second)
 
+first_item = second[0]
+print(first_item[:4])
+
+if first_item[:4] == 'hcl:':
+  print("Heay")
+
 byr_range = range(1920, 2003)
 iyr_range = range(2010, 2021)
 ecl_range = ['amb','blu','brn','gry','grn','hzl','oth']
