@@ -23,11 +23,15 @@ print(first)
 second = first.split(' ')
 print(second)
 
-first_item = second[0]
+first_item = second[4]
 print(first_item[:4])
 
-if first_item[:4] == 'hcl:':
-  print("Heay")
+byr_range = range(1920, 2003)
+iyr_range = range(2010, 2021)
+
+if first_item[:4] == 'byr:':
+  if int(first_item[4:]) in byr_range:
+    print("YYYEEESS")
 
 byr_range = range(1920, 2003)
 iyr_range = range(2010, 2021)
