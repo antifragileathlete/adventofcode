@@ -1,11 +1,5 @@
 f = open('fourth.txt')  # Open file on read mode
-
-
-array = f.read().split("\n\n") # Create a list containing all lines
-# something = re.split(r'[\n\n]', lines)
-# array = list(lines)
-# lines = f.read() # Create a list containing all lines
-# print(array)
+array = f.read().split("\n\n") 
 
 def func():
   blank_array = []
@@ -15,22 +9,10 @@ def func():
   return blank_array
 
 good_array = func()
-# print(good_array)
-
-# first = good_array[0]
-# print(first)
-
-# sub_array = first.split(' ')
-# print(sub_array)
-
-# first_item = sub_array[4]
-# print(first_item[:4])
 
 byr_range = range(1920, 2003)
 iyr_range = range(2010, 2021)
 
-
-# print(sub_array)
 print(good_array)
 super_array = []
 
@@ -46,9 +28,10 @@ print(great_array)
     # letters = sub_array[:4]
 for subsub_array in great_array:
     for string in subsub_array:
-      letters = string[:4]
-      nums = string[4:]
-      print(letters, nums)
+        letters = string[:4]
+        nums = string[4:]
+        print(letters, nums,)
+    print("-----------")
     # byr_date = (array[4:])
     # print(byr_date)
     # if array[:4] == 'byr:':
