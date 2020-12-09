@@ -15,28 +15,54 @@ def func():
   return blank_array
 
 good_array = func()
+# print(good_array)
+
+# first = good_array[0]
+# print(first)
+
+# sub_array = first.split(' ')
+# print(sub_array)
+
+# first_item = sub_array[4]
+# print(first_item[:4])
+
+byr_range = range(1920, 2003)
+iyr_range = range(2010, 2021)
+
+
+# print(sub_array)
 print(good_array)
+super_array = []
 
-first = good_array[0]
-print(first)
+def newFunc():
+  for array in good_array:
+      sub_array = array.split(' ')
+      super_array.append(sub_array)
+  return super_array
 
-second = first.split(' ')
-print(second)
+great_array = newFunc()
+print(great_array)
 
-first_item = second[4]
-print(first_item[:4])
+    # letters = sub_array[:4]
+for subsub_array in great_array:
+    for string in subsub_array:
+      letters = string[:4]
+      nums = string[4:]
+      print(letters, nums)
+    # byr_date = (array[4:])
+    # print(byr_date)
+    # if array[:4] == 'byr:':
+    #   print(array[:4])
+      # if int(array[4:]) in byr_range:
+      #   print("YYYEEESS BYR CORRECT")
+    # elif array[:4] == 'iyr:' and int(array[4:]) in iyr_range:
+    #     print("YYYEEESS IYR CORRECTY")
 
-byr_range = range(1920, 2003)
-iyr_range = range(2010, 2021)
-
-if first_item[:4] == 'byr:':
-  if int(first_item[4:]) in byr_range:
-    print("YYYEEESS")
-
-byr_range = range(1920, 2003)
-iyr_range = range(2010, 2021)
-ecl_range = ['amb','blu','brn','gry','grn','hzl','oth']
-# # print(ecl_range)
+# byr_range = range(1920, 2003)
+# iyr_range = range(2010, 2021)
+# ecl_range = ['amb','blu','brn','gry','grn','hzl','oth']
+# # # print(ecl_range)
+# print(good_array)
 
 
 # if f'iyr:{custom_range}' in test:
